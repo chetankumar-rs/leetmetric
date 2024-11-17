@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function validateUsername(username) {
         if(username.trim() === "") {
             alert("Username should not be empty");
-            return true;
+            return false;
         }
         const regex = /^[a-zA-Z0-9_-]{1,15}$/;
         const isMatching = regex.test(username);
