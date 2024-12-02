@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     searchButton.addEventListener('click', function() {
         const username = usernameInput.value;
-        console.log("logggin username: ", username);
+        console.log("login username: ", username);
         if(validateUsername(username)) {
             fetchUserDetails(username);
         }
